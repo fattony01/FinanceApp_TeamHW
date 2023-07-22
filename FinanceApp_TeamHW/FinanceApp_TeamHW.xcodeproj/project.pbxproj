@@ -13,6 +13,11 @@
 		C5CF332B2A6C8D33007E613F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CF33292A6C8D33007E613F /* Main.storyboard */; };
 		C5CF332D2A6C8D35007E613F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CF332C2A6C8D35007E613F /* Assets.xcassets */; };
 		C5CF33302A6C8D35007E613F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CF332E2A6C8D35007E613F /* LaunchScreen.storyboard */; };
+		C5CF333B2A6C8EED007E613F /* BankAccountsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CF333A2A6C8EED007E613F /* BankAccountsViewController.storyboard */; };
+		C5CF333D2A6C8F17007E613F /* OperationsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CF333C2A6C8F17007E613F /* OperationsViewController.storyboard */; };
+		C5CF333F2A6C8F36007E613F /* HistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CF333E2A6C8F36007E613F /* HistoryViewController.storyboard */; };
+		C5CF33412A6C8F56007E613F /* AnalyticsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CF33402A6C8F56007E613F /* AnalyticsViewController.storyboard */; };
+		C5CF33442A6C8F70007E613F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF33432A6C8F70007E613F /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		C5CF332C2A6C8D35007E613F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5CF332F2A6C8D35007E613F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5CF33312A6C8D35007E613F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5CF333A2A6C8EED007E613F /* BankAccountsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankAccountsViewController.storyboard; sourceTree = "<group>"; };
+		C5CF333C2A6C8F17007E613F /* OperationsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OperationsViewController.storyboard; sourceTree = "<group>"; };
+		C5CF333E2A6C8F36007E613F /* HistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryViewController.storyboard; sourceTree = "<group>"; };
+		C5CF33402A6C8F56007E613F /* AnalyticsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnalyticsViewController.storyboard; sourceTree = "<group>"; };
+		C5CF33432A6C8F70007E613F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		C5CF33222A6C8D33007E613F /* FinanceApp_TeamHW */ = {
 			isa = PBXGroup;
 			children = (
+				C5CF33422A6C8F62007E613F /* Models */,
 				C5CF33372A6C8E52007E613F /* App */,
 				C5CF33382A6C8E75007E613F /* ViewControllers */,
 				C5CF33392A6C8E87007E613F /* Storyboards */,
@@ -87,8 +98,20 @@
 			children = (
 				C5CF33292A6C8D33007E613F /* Main.storyboard */,
 				C5CF332E2A6C8D35007E613F /* LaunchScreen.storyboard */,
+				C5CF333A2A6C8EED007E613F /* BankAccountsViewController.storyboard */,
+				C5CF333C2A6C8F17007E613F /* OperationsViewController.storyboard */,
+				C5CF333E2A6C8F36007E613F /* HistoryViewController.storyboard */,
+				C5CF33402A6C8F56007E613F /* AnalyticsViewController.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C5CF33422A6C8F62007E613F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF33432A6C8F70007E613F /* Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CF33302A6C8D35007E613F /* LaunchScreen.storyboard in Resources */,
+				C5CF333D2A6C8F17007E613F /* OperationsViewController.storyboard in Resources */,
+				C5CF33412A6C8F56007E613F /* AnalyticsViewController.storyboard in Resources */,
 				C5CF332D2A6C8D35007E613F /* Assets.xcassets in Resources */,
 				C5CF332B2A6C8D33007E613F /* Main.storyboard in Resources */,
+				C5CF333F2A6C8F36007E613F /* HistoryViewController.storyboard in Resources */,
+				C5CF333B2A6C8EED007E613F /* BankAccountsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +192,7 @@
 				C5CF33282A6C8D33007E613F /* ViewController.swift in Sources */,
 				C5CF33242A6C8D33007E613F /* AppDelegate.swift in Sources */,
 				C5CF33262A6C8D33007E613F /* SceneDelegate.swift in Sources */,
+				C5CF33442A6C8F70007E613F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
