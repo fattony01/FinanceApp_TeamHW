@@ -56,15 +56,39 @@
 		C5CF33222A6C8D33007E613F /* FinanceApp_TeamHW */ = {
 			isa = PBXGroup;
 			children = (
-				C5CF33232A6C8D33007E613F /* AppDelegate.swift */,
-				C5CF33252A6C8D33007E613F /* SceneDelegate.swift */,
-				C5CF33272A6C8D33007E613F /* ViewController.swift */,
-				C5CF33292A6C8D33007E613F /* Main.storyboard */,
+				C5CF33372A6C8E52007E613F /* App */,
+				C5CF33382A6C8E75007E613F /* ViewControllers */,
+				C5CF33392A6C8E87007E613F /* Storyboards */,
 				C5CF332C2A6C8D35007E613F /* Assets.xcassets */,
-				C5CF332E2A6C8D35007E613F /* LaunchScreen.storyboard */,
-				C5CF33312A6C8D35007E613F /* Info.plist */,
 			);
 			path = FinanceApp_TeamHW;
+			sourceTree = "<group>";
+		};
+		C5CF33372A6C8E52007E613F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF33232A6C8D33007E613F /* AppDelegate.swift */,
+				C5CF33252A6C8D33007E613F /* SceneDelegate.swift */,
+				C5CF33312A6C8D35007E613F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5CF33382A6C8E75007E613F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF33272A6C8D33007E613F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C5CF33392A6C8E87007E613F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF33292A6C8D33007E613F /* Main.storyboard */,
+				C5CF332E2A6C8D35007E613F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FinanceApp_TeamHW/Info.plist;
+				INFOPLIST_FILE = FinanceApp_TeamHW/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FinanceApp_TeamHW/Info.plist;
+				INFOPLIST_FILE = FinanceApp_TeamHW/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
