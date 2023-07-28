@@ -9,21 +9,36 @@ import UIKit
 
 class BankAccountsViewController: UIViewController {
 
+    @IBOutlet var overallBalanceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: - UITableViewDataSource
+extension BankAccountsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        7
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "accountcell", for: indexPath) as? BankAccountTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.accountNameLabel.text = "Счет \(indexPath.row)"
+        cell.accountValueLabel.text = "\(indexPath.row)000 р."
+        
+        return cell
+    }
+}
 
+// MARK: - UITableViewDelegate
+extension BankAccountsViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }

@@ -27,6 +27,7 @@
 		C5CF33562A6C92B4007E613F /* AccountsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF33552A6C92B4007E613F /* AccountsHistoryViewController.swift */; };
 		C5CF33582A6C92D8007E613F /* AddNewBankAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF33572A6C92D7007E613F /* AddNewBankAccountViewController.swift */; };
 		C5CF335C2A6C9600007E613F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CF335B2A6C9600007E613F /* DetailsViewController.swift */; };
+		D097E38E2A73E4050006959D /* BankAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097E38D2A73E4050006959D /* BankAccountTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C5CF33552A6C92B4007E613F /* AccountsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsHistoryViewController.swift; sourceTree = "<group>"; };
 		C5CF33572A6C92D7007E613F /* AddNewBankAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBankAccountViewController.swift; sourceTree = "<group>"; };
 		C5CF335B2A6C9600007E613F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D097E38D2A73E4050006959D /* BankAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C5CF33472A6C9117007E613F /* BankAccountsViewController.swift */,
+				D097E38D2A73E4050006959D /* BankAccountTableViewCell.swift */,
 				C5CF33532A6C9294007E613F /* AccountsTransferViewController.swift */,
 				C5CF33552A6C92B4007E613F /* AccountsHistoryViewController.swift */,
 				C5CF33572A6C92D7007E613F /* AddNewBankAccountViewController.swift */,
@@ -267,6 +270,7 @@
 				C5CF334A2A6C9126007E613F /* OperationsViewController.swift in Sources */,
 				C5CF33512A6C922E007E613F /* AddTargetViewController.swift in Sources */,
 				C5CF33442A6C8F70007E613F /* Model.swift in Sources */,
+				D097E38E2A73E4050006959D /* BankAccountTableViewCell.swift in Sources */,
 				C5CF335C2A6C9600007E613F /* DetailsViewController.swift in Sources */,
 				C5CF334C2A6C9136007E613F /* HistoryViewController.swift in Sources */,
 			);
