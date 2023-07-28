@@ -15,7 +15,10 @@ class AddNewBankAccountViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func cancelButtonPressed() {
+        dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
