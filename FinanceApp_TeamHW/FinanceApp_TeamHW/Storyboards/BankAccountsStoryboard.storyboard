@@ -99,6 +99,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Перевод"/>
+                                        <connections>
+                                            <segue destination="QUV-UJ-sUz" kind="presentation" id="F5l-so-VPt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUs-ls-OXR">
                                         <rect key="frame" x="206" y="0.0" width="155" height="34.333333333333336"/>
@@ -136,6 +139,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="510.68702290076334" y="-699.29577464788736"/>
+        </scene>
+        <!--Accounts Transfer View Controller-->
+        <scene sceneID="3vP-YX-DYE">
+            <objects>
+                <viewController id="QUV-UJ-sUz" customClass="AccountsTransferViewController" customModule="FinanceApp_TeamHW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3IN-Mt-dlk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите сумму" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-5e-nMY">
+                                <rect key="frame" x="50" y="109" width="174" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0 р." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWe-wz-dWi">
+                                <rect key="frame" x="50" y="159" width="293" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="С какого счета:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yny-TL-jc3">
+                                <rect key="frame" x="50" y="213" width="173" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bw4-UP-dCm">
+                                <rect key="frame" x="0.0" y="263" width="393" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0EY-FM-4TE"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На какой счет:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r70-Y9-mJz">
+                                <rect key="frame" x="49.999999999999986" y="383" width="163.66666666666663" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf7-nO-Paz">
+                                <rect key="frame" x="0.0" y="433" width="393" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Lim-Oi-BJb"/>
+                                    <constraint firstAttribute="height" constant="100" id="O4Q-4a-gu0"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYk-O6-8H4">
+                                <rect key="frame" x="50" y="553" width="293" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVa-Oi-fZI">
+                                <rect key="frame" x="121.66666666666669" y="683" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="S5b-8M-02e"/>
+                                    <constraint firstAttribute="height" constant="50" id="lkJ-B9-bde"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Перевести"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3il-bW-uOZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yny-TL-jc3" firstAttribute="leading" secondItem="3il-bW-uOZ" secondAttribute="leading" constant="50" id="3dX-EG-1Xu"/>
+                            <constraint firstItem="3il-bW-uOZ" firstAttribute="trailing" secondItem="sYk-O6-8H4" secondAttribute="trailing" constant="50" id="50M-iy-tHp"/>
+                            <constraint firstItem="bw4-UP-dCm" firstAttribute="leading" secondItem="3il-bW-uOZ" secondAttribute="leading" id="A9b-po-odg"/>
+                            <constraint firstItem="sYk-O6-8H4" firstAttribute="leading" secondItem="3il-bW-uOZ" secondAttribute="leading" constant="50" id="CQq-7l-7OO"/>
+                            <constraint firstItem="sYk-O6-8H4" firstAttribute="top" secondItem="Gf7-nO-Paz" secondAttribute="bottom" constant="20" id="CzX-PL-Lh5"/>
+                            <constraint firstItem="cdy-5e-nMY" firstAttribute="top" secondItem="3il-bW-uOZ" secondAttribute="top" constant="50" id="Jqi-vy-eEE"/>
+                            <constraint firstItem="Gf7-nO-Paz" firstAttribute="trailing" secondItem="3il-bW-uOZ" secondAttribute="trailing" id="KSr-W8-Frl"/>
+                            <constraint firstItem="Yny-TL-jc3" firstAttribute="top" secondItem="gWe-wz-dWi" secondAttribute="bottom" constant="20" id="KaR-fz-P3g"/>
+                            <constraint firstItem="Gf7-nO-Paz" firstAttribute="top" secondItem="r70-Y9-mJz" secondAttribute="bottom" constant="20" id="OgX-Ep-WF4"/>
+                            <constraint firstItem="cdy-5e-nMY" firstAttribute="leading" secondItem="3il-bW-uOZ" secondAttribute="leading" constant="50" id="RBp-Rn-mhg"/>
+                            <constraint firstItem="3il-bW-uOZ" firstAttribute="bottom" secondItem="cVa-Oi-fZI" secondAttribute="bottom" constant="50" id="ZUG-lV-ZfI"/>
+                            <constraint firstItem="bw4-UP-dCm" firstAttribute="trailing" secondItem="3il-bW-uOZ" secondAttribute="trailing" id="euJ-aD-iOH"/>
+                            <constraint firstItem="r70-Y9-mJz" firstAttribute="top" secondItem="bw4-UP-dCm" secondAttribute="bottom" constant="20" id="fSI-SK-ukT"/>
+                            <constraint firstItem="r70-Y9-mJz" firstAttribute="leading" secondItem="3il-bW-uOZ" secondAttribute="leading" constant="50" id="fll-Km-k9M"/>
+                            <constraint firstItem="Gf7-nO-Paz" firstAttribute="leading" secondItem="3il-bW-uOZ" secondAttribute="leading" id="iTM-Vz-N7X"/>
+                            <constraint firstItem="gWe-wz-dWi" firstAttribute="top" secondItem="cdy-5e-nMY" secondAttribute="bottom" constant="20" id="rS5-4D-f8r"/>
+                            <constraint firstItem="3il-bW-uOZ" firstAttribute="trailing" secondItem="gWe-wz-dWi" secondAttribute="trailing" constant="50" id="uV9-tS-AD6"/>
+                            <constraint firstItem="bw4-UP-dCm" firstAttribute="top" secondItem="Yny-TL-jc3" secondAttribute="bottom" constant="20" id="vIy-xc-bP7"/>
+                            <constraint firstItem="cVa-Oi-fZI" firstAttribute="centerX" secondItem="3IN-Mt-dlk" secondAttribute="centerX" id="yvf-GZ-bPP"/>
+                            <constraint firstItem="gWe-wz-dWi" firstAttribute="leading" secondItem="3il-bW-uOZ" secondAttribute="leading" constant="50" id="zDd-v9-Kjp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fromAccountPickerView" destination="bw4-UP-dCm" id="mDE-YJ-NKg"/>
+                        <outlet property="toAcountPickerView" destination="Gf7-nO-Paz" id="9PE-dM-C3h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUq-kC-zjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="14.788732394366198"/>
         </scene>
         <!--Add New Bank Account View Controller-->
         <scene sceneID="ItA-Ge-MdC">
